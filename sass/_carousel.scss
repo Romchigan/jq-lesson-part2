@@ -1,0 +1,48 @@
+.carousel {
+  transform: rotate(-90deg);
+  &-inner {
+  overflow: inherit;
+  }
+  &-indicators {
+    position: absolute;
+    left: -260px;
+    top: 200px;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    & li {
+      background-color: #e1e1e1;
+      max-width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+    & .active {
+      background-color: $red;
+    }
+  }
+  &-heading {
+    color: $black;
+    font: 700 50px/30px Montserrat;
+    margin: 370px 0 0 195px;
+    padding-bottom: 35px;
+  }
+  &-sub-heading {
+    color: #92a1a5;
+    font: 400 14px/30px Montserrat;
+    width: 400px;
+    margin-left: 195px;
+  }
+  &-vertical {
+    transform: rotate(90deg);
+  }
+
+}
+
+.schroll {
+  color: $black;
+  font: 700 18px/30px Montserrat;
+  margin: 110px 0 0 120px;
+  transform: rotate(-90deg);
+  animation: schroll 1s linear infinite;
+  -webkit-animation: schroll 1s linear infinite;
+}
