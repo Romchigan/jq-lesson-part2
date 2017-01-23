@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet"  href="css/menu.css" type="text/css">
+	<link rel="stylesheet"  href="bower_components/swiper/dist/css/swiper.min.css" type="text/css">
 	<link rel="stylesheet" href="css/main.min.css" type="text/css">
 </head>
 <body>
@@ -34,52 +35,40 @@
 			<div class="col-7 light-gray-block">
 				<article>
 					<div class="col-md-6 pl-0">
-						<div id="carousel-header" class="carousel slide" data-ride="carousel">
-							<div class="carousel-inner" role="listbox">
-								<div class="carousel-item active">
-									<div class="col-md-12 pl-0 pr-0 carousel-vertical">
-										<h1 class="carousel-heading text-uppercase">Phantom</h1>
-										<p class="carousel-sub-heading">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
-										</p>
-									</div>
+						<div class="swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<h1 class="carousel-heading text-uppercase">Phantom</h1>
+									<p class="carousel-sub-heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
+									</p>
 								</div>
-								<div class="carousel-item">
-									<div class="col-md-12 pl-0 pr-0 carousel-vertical">
-										<h1 class="carousel-heading text-uppercase">Phantom</h1>
-										<p class="carousel-sub-heading">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
-										</p>
-									</div>
+								<div class="swiper-slide">
+									<h1 class="carousel-heading text-uppercase">Phantom</h1>
+									<p class="carousel-sub-heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
+									</p>
 								</div>
-								<div class="carousel-item ">
-									<div class="col-md-12 pl-0 pr-0 carousel-vertical">
-										<h1 class="carousel-heading text-uppercase">Phantom</h1>
-										<p class="carousel-sub-heading">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
-										</p>
-									</div>
+								<div class="swiper-slide">
+									<h1 class="carousel-heading text-uppercase">Phantom</h1>
+									<p class="carousel-sub-heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
+									</p>
 								</div>
-								<div class="carousel-item ">
-									<div class="col-md-12 pl-0 pr-0 carousel-vertical">
-										<h1 class="carousel-heading text-uppercase">Phantom</h1>
-										<p class="carousel-sub-heading">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
-										</p>
-									</div>
+								<div class="swiper-slide">
+									<h1 class="carousel-heading text-uppercase">Phantom</h1>
+									<p class="carousel-sub-heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.
+									</p>
 								</div>
+
 							</div>
-							<div class="row">
-								<div class="col-xs-12 clients-carousel">
-									<ol class="carousel-indicators">
-										<li data-target="#carousel-header" data-slide-to="0" class="active"></li>
-										<li data-target="#carousel-header" data-slide-to="1"></li>
-										<li data-target="#carousel-header" data-slide-to="2"></li>
-										<li data-target="#carousel-header" data-slide-to="3"></li>
-									</ol>
-								</div>
-							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
 						</div>
+
 					</div>
 				</article>
 				<div class="row">
@@ -137,6 +126,45 @@
 			</div>
 		</div>
 	</section>
+	<section>
+		<h1 class="features-section-heading text-center">Features</h1>
+		<div class="wrap-features justify-content-around align-items-center flex-wrap flex-row">
+			<figure>
+				<p class="text-center">
+					<img src="img/features/new-technology.png" alt="new-technology" class="img-fluid" width="91px" height="91px">
+				</p>
+				<figcaption class="sub-features text-center">New-technology</figcaption>
+			</figure>
+			<figure>
+				<p class="text-center signal">
+					<img src="img/features/good-signal.png" alt="good-signal" class="img-fluid" width="62px" height="87px">
+				</p>
+				<figcaption class="sub-features text-center">Good signal</figcaption>
+			</figure>
+			<figure>
+				<p class="text-center">
+					<img src="img/features/easy-to-use.png" alt="use" class="img-fluid" width="91px" height="91px">
+				</p>
+				<figcaption class="sub-features text-center">Easy to use</figcaption>
+			</figure>
+			<figure>
+				<p class="text-center">
+					<img src="img/features/visibility.png" alt="visibility" class="img-fluid" width="91px" height="91px">
+				</p>
+				<figcaption class="sub-features text-center">Visibility</figcaption>
+			</figure>
+		</div>
+	</section>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-sm-12">
+
+				</div>
+				<div class="col-lg-6 col-sm-12"></div>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -147,6 +175,8 @@
 		<script src="js/modernizr.custom.25376.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>
+		<script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+		<script src="bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

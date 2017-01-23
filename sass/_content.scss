@@ -117,3 +117,81 @@
     transition: 1.2s ;
   }
 }
+
+.wrap-features {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  figure {
+    width: 300px;
+    padding-bottom: 100px;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+.features-section-heading {
+  color: $black;
+  font: 700 48px/60px Montserrat;
+  margin: 120px 0 100px;
+}
+
+.sub-features {
+  color: #000000;
+  font: 400 30px Montserrat;
+}
+
+.signal {
+  &:before {
+    content: "";
+    display: block;
+    left: 566px;
+    top: 1120px;
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 6px solid $black;
+    opacity: 0;
+  }
+}
+
+figure {
+  &:first-child {
+    img {
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s ;
+      -ms-transition: 1.5s ;
+      -o-transition: 1.5s ;
+      transition: 1.5s ;
+    }
+    &:hover img{
+      transform: rotate(270deg);
+      cursor: pointer;
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s ;
+      -ms-transition: 1.5s ;
+      -o-transition: 1.5s ;
+      transition: 1.5s ;
+    }
+  }
+  &:nth-child(3) {
+    img {
+      -webkit-transition: 1.2s;
+      -moz-transition: 1.2s ;
+      -ms-transition: 1.2s ;
+      -o-transition: 1.2s ;
+      transition: 1.2s ;
+    }
+    &:hover img{
+      transform: rotate(90deg);
+      cursor: pointer;
+      -webkit-transition: 1.2s;
+      -moz-transition: 1.2s ;
+      -ms-transition: 1.2s ;
+      -o-transition: 1.2s ;
+      transition: 1.2s ;
+    }
+  }
+}
