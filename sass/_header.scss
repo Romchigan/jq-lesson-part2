@@ -147,9 +147,14 @@
   color: #92a1a5;
   font: 400 14px/30px Montserrat;
   margin-left: 70px;
-  //&:hover {
-  //  color: #ff343d;
-  //}
+  &:hover {
+    color: $red;
+    -webkit-transition: 1s;
+    -moz-transition: 1s ;
+    -ms-transition: 1s ;
+    -o-transition: 1s ;
+    transition: 1s ;
+  }
 }
 
 .phone:before  {
