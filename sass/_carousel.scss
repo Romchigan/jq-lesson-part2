@@ -23,14 +23,14 @@
   &-heading {
     color: $black;
     font: 700 50px/30px Montserrat;
-    margin: 370px 0 0 195px;
+    margin: 70px 0 0 180px;
     padding-bottom: 35px;
   }
   &-sub-heading {
     color: #92a1a5;
     font: 400 14px/30px Montserrat;
     width: 400px;
-    margin-left: 195px;
+    margin: 0 0 0 180px;
   }
   &-vertical {
     transform: rotate(90deg);
@@ -45,4 +45,29 @@
   transform: rotate(-90deg);
   animation: schroll 1s linear infinite;
   -webkit-animation: schroll 1s linear infinite;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 200px;
+  margin-top: 300px;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+  left: 140px;
+  top: 45%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff343d;
+}
+
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 14px 0;
 }
