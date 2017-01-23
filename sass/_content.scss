@@ -1,0 +1,119 @@
+.type-to-fly-section {
+  background: url("../img/tap-to-fly/dron.png") no-repeat center center;
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 130px;
+    right: -70px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #e8ecf1;
+    z-index: 2;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 105px;
+    right: -90px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color:#e8ecf1;
+    opacity: .6;
+    z-index: 1;
+  }
+  h1 {
+    font: 700 50px/60px Montserrat;
+    padding: 150px 0 0 170px;
+    position: absolute;
+    z-index: 5;
+    a {
+      color: $black;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  p {
+    color: #92a1a5;
+    font: 400 12px/30px Montserrat;
+    padding: 220px 0 0 170px;
+  }
+}
+
+.fly-higher-section {
+  background: url("../img/tap-to-fly/tap-to-fly.png") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  display: flex;
+  z-index: 3;
+  &-heading {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    z-index: 2;
+    width: 300px;
+    font: 700 50px/60px Montserrat;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    background-color: $black;
+    width: 45%;
+    height: 400px;
+    opacity: 0.65;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s ;
+    -ms-transition: 1.2s ;
+    -o-transition: 1.2s ;
+    transition: 1.2s ;
+  }
+  &:hover:before {
+    width: 60%;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s ;
+    -ms-transition: 1.2s ;
+    -o-transition: 1.2s ;
+    transition: 1.2s ;
+  }
+  .btn-white {
+    border-radius: 28px;
+    background-color: $white;
+    font: 700 18px Montserrat;
+    padding: 16px 37px;
+    transform: rotate(-90deg);
+    margin: 200px 0 0 580px;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s ;
+    -ms-transition: 1.2s ;
+    -o-transition: 1.2s ;
+    transition: 1.2s ;
+    &:before {
+      content: "";
+      top: 25px;
+      right: 200px;
+      display: block;
+      height: 1px;
+      width: 80px;
+      background-color: #fff;
+      position: absolute;;
+    }
+  }
+  &:hover .btn-white {
+    transform: rotate(0deg);
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s ;
+    -ms-transition: 1.2s ;
+    -o-transition: 1.2s ;
+    transition: 1.2s ;
+  }
+}
