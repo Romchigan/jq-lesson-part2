@@ -143,22 +143,23 @@
 }
 
 .signal {
+  position: relative;
   &:before {
     content: "";
     display: block;
-    left: 566px;
-    top: 1120px;
+    left: 115px;
+    top: -4px;
     position: absolute;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    border: 6px solid $black;
+    width: 70px;
+    height: 70px;
+    border: 5px solid $black;
     opacity: 0;
   }
 }
 
-figure {
-  &:first-child {
+.figure {
+  &-technology {
     img {
       -webkit-transition: 1.5s;
       -moz-transition: 1.5s ;
@@ -176,7 +177,14 @@ figure {
       transition: 1.5s ;
     }
   }
-  &:nth-child(3) {
+  &-signal {
+    &:hover .signal:before {
+      animation: signal 1.3s linear infinite;
+      -webkit-animation: signal 1.3s linear infinite;
+      cursor: pointer;
+    }
+  }
+  &-use {
     img {
       -webkit-transition: 1.2s;
       -moz-transition: 1.2s ;
@@ -194,4 +202,34 @@ figure {
       transition: 1.2s ;
     }
   }
+  &-visibility {
+    img {
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s ;
+      -ms-transition: 1.5s ;
+      -o-transition: 1.5s ;
+      transition: 1.5s ;
+    }
+    &:hover img {
+      animation: visual 1.5s linear infinite;
+      -webkit-animation: visual 1.5s linear infinite;
+    }
+  }
+}
+
+.bg-dark-gray {
+  background: url("../img/new-generation/generation.png") no-repeat center center;
+  background-size: cover;
+
+}
+
+.heading-generation {
+  font: 400 92px/102px Montserrat;
+  color: $white;
+  width: 300px;
+  margin: 150px 0 0 50px;
+}
+
+.red-text {
+  color: #ff343d;
 }
