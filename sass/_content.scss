@@ -3,6 +3,7 @@
   height: 400px;
   background-size: cover;
   position: relative;
+  overflow: hidden;
   &:before {
     content: "";
     position: absolute;
@@ -213,6 +214,7 @@
     &:hover img {
       animation: visual 1.5s linear infinite;
       -webkit-animation: visual 1.5s linear infinite;
+      cursor: pointer;
     }
   }
 }
@@ -232,4 +234,9 @@
 
 .red-text {
   color: #ff343d;
+}
+
+.img-visibility {
+  height: 100%;
+  width: auto;
 }
