@@ -197,3 +197,14 @@
 
 }
 
+
+.schroll {
+  color: $black;
+  font: 700 18px/30px Montserrat;
+  position: absolute;
+  bottom: 70px;
+  left: 110px;
+  transform: rotate(-90deg);
+  animation: schroll .8s linear infinite;
+  -webkit-animation: schroll .8s linear infinite;
+}
