@@ -1,0 +1,41 @@
+.btn {
+  border-radius: 28px;
+  font: 700 18px Montserrat;
+  padding: 16px 37px;
+  &-rotate {
+    transform: rotate(-90deg);
+    margin: 200px 0 0 580px;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s ;
+    -ms-transition: 1.2s ;
+    -o-transition: 1.2s ;
+    transition: 1.2s ;
+    &:before {
+      content: "";
+      top: 25px;
+      right: 200px;
+      display: block;
+      height: 1px;
+      width: 80px;
+      background-color: $white;
+      position: absolute;;
+    }
+  }
+  &-white {
+    background-color: $white;
+  }
+  &-dark-gray {
+    background-color: #232323;
+    border: 2px solid #3b3b3b;
+    margin: 50px 0 0 100px;
+  }
+  &-light-blue-border {
+    border: 2px solid #eff2f6;
+    background-color: $white;
+    margin: 50px 0 0 180px;
+  }
+  &-journey {
+    color: #318f76;
+    margin-top: 50px;
+  }
+}
