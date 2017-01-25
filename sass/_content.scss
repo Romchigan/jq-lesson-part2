@@ -86,30 +86,7 @@
     -o-transition: 1.2s ;
     transition: 1.2s ;
   }
-  .btn-white {
-    border-radius: 28px;
-    background-color: $white;
-    font: 700 18px Montserrat;
-    padding: 16px 37px;
-    transform: rotate(-90deg);
-    margin: 200px 0 0 580px;
-    -webkit-transition: 1.2s;
-    -moz-transition: 1.2s ;
-    -ms-transition: 1.2s ;
-    -o-transition: 1.2s ;
-    transition: 1.2s ;
-    &:before {
-      content: "";
-      top: 25px;
-      right: 200px;
-      display: block;
-      height: 1px;
-      width: 80px;
-      background-color: #fff;
-      position: absolute;;
-    }
-  }
-  &:hover .btn-white {
+  &:hover .btn-rotate {
     transform: rotate(0deg);
     -webkit-transition: 1.2s;
     -moz-transition: 1.2s ;
@@ -206,10 +183,10 @@
   &-visibility {
     img {
       -webkit-transition: 1.5s;
-      -moz-transition: 1.5s ;
-      -ms-transition: 1.5s ;
-      -o-transition: 1.5s ;
-      transition: 1.5s ;
+      -moz-transition: 1.5s;
+      -ms-transition: 1.5s;
+      -o-transition: 1.5s;
+      transition: 1.5s;
     }
     &:hover img {
       animation: visual 1.5s linear infinite;
@@ -226,11 +203,35 @@
 }
 
 .heading-generation {
-  font: 400 92px/102px Montserrat;
-  color: $white;
-  width: 300px;
-  margin: 150px 0 0 50px;
+  font: 400 4rem/5rem Montserrat;
+  width: 600px;
+  &-vision {
+    margin: 180px 0 0 100px;
+  }
+  &-flying {
+    margin: 220px 0 0 180px;
+  }
+  &-small {
+    font: 400 2.8rem/5rem Montserrat;
+  }
 }
+
+.hidden-text {
+  &-vision {
+    display: none;
+    margin: 0 0 8px 100px;
+  }
+  &-flying {
+    display: none;
+    margin: 0 0 8px 180px;
+  }
+  &-journey {
+    display: none;
+    margin: 20px auto -20px;
+    width: 800px;
+  }
+}
+
 
 .red-text {
   color: #ff343d;
@@ -239,4 +240,56 @@
 .img-visibility {
   height: 100%;
   width: auto;
+}
+
+.dron-flying {
+  margin: 110px 0 100px;
+  max-height: 700px;
+}
+
+.journey {
+  position: relative;
+  background: url("../img/journey/journey.png") no-repeat center center;
+  background-size: cover;
+  min-height: 1000px;
+  width: auto;
+  &-heading {
+    font: 700 6rem Montserrat;
+    margin-top: 600px;
+    &-small {
+      font: 400 5rem/5rem Montserrat;
+    }
+  }
+}
+
+.footer-section {
+  position: relative;
+}
+
+.sub-heading-footer {
+  color: #92a1a5;
+  font: 400 14px/30px Montserrat;
+  margin-bottom: 200px;
+  &:before {
+    content: "Phantom";
+    text-transform: uppercase;
+    text-shadow: 8px 14px 95px rgba(0,0,0,0.05);
+    color: #fff;
+    font: 700 13rem/6rem Montserrat;
+    position: absolute;
+    z-index: -1;
+    left: 205px;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 1300px)  {
+  .sub-heading-footer {
+    font: 400 14px/30px Montserrat;
+    &:before {
+      font: 700 10rem/6rem Montserrat;
+      left: 205px;
+      top: -10px;
+    }
+  }
 }
