@@ -1,7 +1,20 @@
+.logo{
+  color: $black;
+  font: 700 24px/30px Montserrat;
+  &-header {
+    margin-left: 215px;
+  }
+  &-footer {
+    margin: 200px auto 30px;
+    width: 300px
+  }
+}
+
 .pulse {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  cursor: pointer;
   &:after {
     content: '';
     position: absolute;
@@ -10,8 +23,6 @@
     height: 12px;
     background-color: $white;
     border: 3.5px solid $red;
-    top: 0;
-    right: -15px;
   }
   &:before {
     content: '';
@@ -21,11 +32,34 @@
     height: 35px;
     border: 10px solid $red;
     opacity: 0;
-    top: -12px;
-    right: -27px;
   }
-  &:hover:before {
-    animation: pulse 1s linear infinite;
-    -webkit-animation: pulse 1s linear infinite;
+  &-header {
+    &:after {
+      top: 0;
+      right: -15px;
+    }
+    &:before {
+      top: -12px;
+      right: -27px;
+    }
+    &:hover:before {
+      animation: pulse 1s linear infinite;
+      -webkit-animation: pulse 1s linear infinite;
+    }
+  }
+  &-footer {
+    &:after {
+      top: -4px;
+      left: 186px;
+    }
+    &:before {
+      top: -16px;
+      right: 90px;
+    }
+    &:hover:before {
+      animation: pulse 1s linear infinite;
+      -webkit-animation: pulse 1s linear infinite;
+    }
   }
 }
+
